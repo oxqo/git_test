@@ -1,8 +1,10 @@
-<?xml version="1.0" standalone="yes"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
-  <script type="text/javascript">
-    alert("SVG XSS!");
-    var mytest123=1/0;
-  </script>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" baseProfile="full">
+   <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+  <a href="http://geeksforgeeks.org">
+                <circle cx="150" cy="100" r="80" fill="green">
+                </circle>
+            </a>
+   <script type="text/javascript">
+      alert('xss');
+   </script>
 </svg>
